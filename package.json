@@ -1,0 +1,25 @@
+{
+  "name": "ams-webhook",
+  "version": "1.0.0",
+  "description": "自动化管理系统的webhook",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --experimental-modules app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiang-Xuan/webhook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jiang-Xuan/webhook/issues"
+  },
+  "homepage": "https://github.com/Jiang-Xuan/webhook#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "nodemon": "^1.12.1"
+  }
+}
