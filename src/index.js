@@ -1,5 +1,4 @@
-import http from 'http'
-import { HOSTNAME, PORT } from '../constants/const.mjs'
+const http = require('http')
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -7,4 +6,4 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n');
 })
 
-export default server
+exports.server = server
