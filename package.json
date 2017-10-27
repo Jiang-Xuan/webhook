@@ -4,7 +4,7 @@
   "description": "自动化管理系统的webhook",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "export NODE_ENV=dev && nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Jiang-Xuan/webhook#readme",
   "devDependencies": {
+    "cross-env": "^5.1.0",
     "eslint": "^4.9.0",
     "nodemon": "^1.12.1"
   },

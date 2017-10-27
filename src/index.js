@@ -6,4 +6,4 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n');
 })
 
-exports.server = server
+module.exports.server = server
