@@ -1,0 +1,10 @@
+apps:
+  - script: ./app.js
+    name: webhook
+    instances: 2
+    exec_mode: cluster
+    watch: true
+    env:
+      NODE_ENV: dev
+    env_prod:
+      NODE_ENV: prod
