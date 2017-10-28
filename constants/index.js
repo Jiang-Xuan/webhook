@@ -1,4 +1,5 @@
-const { HOSTNAME, PORT } = require('./server')
+const { HOSTNAME, PORT, GETWEBHOOKCONFIG } = require('./server')
 
 exports.HOSTNAME = HOSTNAME
 exports.PORT = PORT
+exports.GETWEBHOOKCONFIG = GETWEBHOOKCONFIG
