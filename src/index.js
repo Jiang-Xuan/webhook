@@ -19,6 +19,7 @@ const server = http.createServer((req, res) => {
     res.statusCode = 403
     res.setHeader('Content-Type', 'text/plain')
     res.end('403 Deny.\n')
+    return
   }
 
   let postReqBody = ''
