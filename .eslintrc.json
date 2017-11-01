@@ -1,7 +1,12 @@
 {
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+    "ecmaVersion": 6
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "Promise": true
+  }
 }
