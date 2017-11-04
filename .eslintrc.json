@@ -3,5 +3,14 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "no-console": ["warn"],
+    "space-before-function-paren": ["error", {
+      "asyncArrow": "always"
+    }]
+  }
 }
