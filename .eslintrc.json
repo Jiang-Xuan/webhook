@@ -8,5 +8,11 @@
   },
   "globals": {
     "Promise": true
+  },
+  "rules": {
+    "no-console": ["warn"],
+    "space-before-function-paren": ["error", {
+      "asyncArrow": "always"
+    }]
   }
 }

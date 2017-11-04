@@ -18,11 +18,12 @@ const validGithubData = async (data, xHubSignature) => {
 
   if (`sha1=${signature}` !== xHubSignature) {
     console.warn('加密字符串不匹配, 丢弃该请求')
-    return
+    return false
   }
 
   console.log('请求校验成功, 需要处理该请求')
 
+  return true
 }
 
 module.exports.validGithubData = validGithubData
