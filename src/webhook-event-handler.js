@@ -8,7 +8,7 @@ const webhookEventHandler = (eventType, postReqBody) => {
       return
     }
     case 'create':
-    case 'create-true': {
+    case 'push-true': {
       createEventHandler(postReqBody)
       return
     }
