@@ -1,4 +1,4 @@
-const createEventHandler = require('./create-event-handler/index')
+const { createEventHandler } = require('./create-event-handler/index')
 
 const webhookEventHandler = (eventType, postReqBody) => {
   switch (eventType) {
@@ -8,6 +8,10 @@ const webhookEventHandler = (eventType, postReqBody) => {
     }
     case 'create': {
       createEventHandler(postReqBody)
+      return
+    }
+    case 'delete': {
+      deleteEventHandler(postReqBody)
       return
     }
   }
