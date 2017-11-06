@@ -1,12 +1,14 @@
 const { createEventHandler } = require('./create-event-handler/index')
 
 const webhookEventHandler = (eventType, postReqBody) => {
-  switch (eventType) {
+  const { created } = postReqBody
+  switch (`${eventType}${created ? '-true' : ''}`) {
     case 'ping': {
       console.log('Oh, this is a ping test request, wish you happiness.:)')
       return
     }
-    case 'create': {
+    case 'create':
+    case 'create-true': {
       createEventHandler(postReqBody)
       return
     }
