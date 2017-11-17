@@ -1,7 +1,7 @@
 const { createBranchEventHandler } = require('./branch')
 const { createTagEventHandler } = require('./tag')
+
 const createEventHandler = (postReqBody) => {
-  debugger
   const { ref, repository: { name } } = postReqBody
   const ref_type = ~ref.indexOf('tags') ? 'tag' : 'branch'
 
@@ -12,6 +12,7 @@ const createEventHandler = (postReqBody) => {
     }
     case 'tag': {
       createTagEventHandler(name, ref)
+      return
     }
   }
 }
