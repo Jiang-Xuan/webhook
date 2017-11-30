@@ -7,22 +7,22 @@ echo "################################
 #
 ################################"
 
-echo "移除 /app /www/dev /www/prod目录"
+echo "移除 /app /www/dev/frontend /www/prod/backend目录"
 
 if [ -x '/' ];then
     rm -r /app
-    rm -r /www/dev
-    rm -r /www/prod
+    rm -r /www/dev/frontend
+    rm -r /www/prod/backend
 fi
 
 if [ ! -d '/app' ];then
     echo '/app移除成功'
 fi
 
-if [ ! -d '/www/dev' ];then
-    echo '/www/dev移除成功'
+if [ ! -d '/www/dev/frontend' ];then
+    echo '/www/dev/frontend移除成功'
 fi
 
-if [ ! -d '/www/prod' ];then
-    echo '/www/prod移除成功'
+if [ ! -d '/www/prod/backend' ];then
+    echo '/www/prod/backend移除成功'
 fi

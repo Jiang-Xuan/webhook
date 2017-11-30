@@ -1,3 +1,4 @@
 {
-  "type": "backend"
+  "type": "backend",
+  "command": ["pm2 startOrRestart ./process.yml"]
 }

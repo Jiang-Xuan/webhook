@@ -7,22 +7,22 @@ echo "################################
 #
 ################################"
 
-echo "创建 /app /www/dev /www/prod目录"
+echo "创建 /app /www/dev/frontend /www/prod/backend目录"
 
 if [ -x '/' ];then
     mkdir /app
-    mkdir -p /www/dev
-    mkdir -p /www/prod
+    mkdir -p /www/dev/frontend
+    mkdir -p /www/prod/backend
 fi
 
 if [ -d '/app' ];then
     echo '/app目录创建成功'
 fi
 
-if [ -d '/www/dev' ];then
-    echo '/www/dev目录创建成功'
+if [ -d '/www/dev/frontend' ];then
+    echo '/www/dev/frontend目录创建成功'
 fi
 
-if [ -d '/www/prod' ];then
-    echo '/www/prod目录创建成功'
+if [ -d '/www/prod/backend' ];then
+    echo '/www/prod/backend目录创建成功'
 fi
